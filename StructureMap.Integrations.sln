@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureMap.Integrations.Owin", "src\StructureMap.Integrations.Owin\StructureMap.Integrations.Owin.csproj", "{49F65224-0FF3-450D-A23F-718AFBD231B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureMap.Integrations.WebApi", "src\StructureMap.Integrations.WebApi\StructureMap.Integrations.WebApi.csproj", "{86FBC721-E1ED-4321-8499-969B01C738A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureMap.Integrations.Owin.WebApi", "src\StructureMap.Integrations.Owin.WebApi\StructureMap.Integrations.Owin.WebApi.csproj", "{809C40F6-5B06-454B-954C-50501046F03C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureMap.Integrations.Samples.OwinAndWebApi", "samples\StructureMap.Integrations.Samples.OwinAndWebApi\StructureMap.Integrations.Samples.OwinAndWebApi.csproj", "{EAA58041-AEFC-4452-9D8C-1F533D314AD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{95B8A9B9-14F2-49DD-AF4F-E097757DC70F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3EA66DF6-72A2-421A-8C95-501840BE6B24}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F65224-0FF3-450D-A23F-718AFBD231B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F65224-0FF3-450D-A23F-718AFBD231B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F65224-0FF3-450D-A23F-718AFBD231B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F65224-0FF3-450D-A23F-718AFBD231B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86FBC721-E1ED-4321-8499-969B01C738A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FBC721-E1ED-4321-8499-969B01C738A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FBC721-E1ED-4321-8499-969B01C738A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FBC721-E1ED-4321-8499-969B01C738A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809C40F6-5B06-454B-954C-50501046F03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809C40F6-5B06-454B-954C-50501046F03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809C40F6-5B06-454B-954C-50501046F03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809C40F6-5B06-454B-954C-50501046F03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA58041-AEFC-4452-9D8C-1F533D314AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA58041-AEFC-4452-9D8C-1F533D314AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA58041-AEFC-4452-9D8C-1F533D314AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA58041-AEFC-4452-9D8C-1F533D314AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAA58041-AEFC-4452-9D8C-1F533D314AD2} = {95B8A9B9-14F2-49DD-AF4F-E097757DC70F}
+	EndGlobalSection
+EndGlobal
