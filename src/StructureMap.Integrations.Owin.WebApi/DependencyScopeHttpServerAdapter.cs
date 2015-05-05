@@ -1,4 +1,5 @@
 ﻿using StructureMap.Integrations.WebApi;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,6 +29,8 @@ namespace StructureMap.Integrations.Owin.WebApi
 
             if (container != null)
             {
+                Trace.TraceInformation("Creating StructureMap Dependency Scope from OWIN request container.");
+                
                 // beware that setting the dependency scope like this will not register it for disposal automatically
                 var scope = new StructureMapDependencyScope(container);
                 request.Properties[HttpPropertyKeys.DependencyScope] = scope;

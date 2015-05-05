@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace StructureMap.Integrations.Owin
@@ -27,6 +28,8 @@ namespace StructureMap.Integrations.Owin
 
         public async Task Invoke(IDictionary<string, object> owinEnvironment)
         {
+            Trace.TraceInformation("Initializing StructureMap Request Container.");
+            
             var requestContainer = rootContainer.GetNestedContainer();
 
             if (requestContainerConfiguration != null)
@@ -39,6 +42,7 @@ namespace StructureMap.Integrations.Owin
             using (requestContainer)
             {
                 await next(owinEnvironment);
+                Trace.TraceInformation("Disposing StructureMap Request Container.");
             }
         }
     }
